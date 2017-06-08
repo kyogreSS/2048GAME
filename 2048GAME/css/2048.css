@@ -1,0 +1,326 @@
+div,table,td,th,tr,a,p,span{
+    margin:0;
+    padding:0;
+}
+
+.body{
+    width:800px;
+    margin:0 auto;
+    background: #eee4da;
+    height:750px;
+    /*position:relative;*/
+    z-index:-500;
+}
+body{
+    background-image:url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    /*opacity: 0.5;*/
+}
+
+/*背景table*/
+#show{
+    /*width:480px;*/
+    /*height:480px;*/
+    /*border:1px solid #baad9c;*/
+    background-color: #baad9c;
+    display:block;
+    /*opacity: 0;*/
+    margin:0 auto;
+    width:524px;
+    height:524px;
+    overflow: hidden;
+    /*position:absolute;*/
+    /*margin-top:150px;*/
+    z-index:100;
+    position:relative;
+}
+
+/*技能框*/
+#ability{
+    /*position:absolute;*/
+    /*z-index: -100;*/
+
+}
+
+.abilityStyle{
+    position:relative;
+    overflow: hidden;
+    /*border:1px solid #baad9c;*/
+    background-color: #ff5304;
+    display:block;
+    margin:0 auto;
+    width:540px;
+    height:524px;
+    overflow: hidden;
+    z-index: 0;
+    margin-top:-524px;
+}
+
+/*结束与开始框*/
+#disabled{
+    position:relative;
+    overflow: hidden;
+    /*border:1px solid #baad9c;*/
+    background-color: #000000;
+    display:block;
+    margin:0 auto;
+    width:540px;
+    height:524px;
+    overflow: hidden;
+    z-index: 900;
+    margin-top:-524px;
+    opacity:0.5;
+    color:white;
+    text-align: center;
+}
+
+/*结束与开始框内容*/
+#disabled p{
+    /*position:inherit;*/
+    display:block;
+    z-index:900;
+    color:white;
+    font-size:60px;
+    /*margin:0 auto;*/
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:180px;
+}
+/*结束与开始框按键*/
+#disabled div{
+    /*position:inherit;*/
+    display:block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    height:40px;
+    width:180px;
+    margin:0 auto;
+    line-height:40px;
+    background-color: #ba5bff;
+    border-radius: 10px;
+    margin-top:40px;
+}
+
+
+
+#show tr{
+    display:block;
+    margin:-2px;
+    padding:0px;
+}
+
+#show tr td{
+    width:120px;
+    height:120px;
+    /*border:0px solid #bbada0;*/
+    background-color: #ccc0b2;
+    font-size:40px;
+    line-height:120px;
+    text-align:center;
+    font-weight:bold;
+    overflow:hidden;
+    padding:0px;
+    margin:5px;
+    display: block;
+    float:left;
+    border-radius: 5px;
+}
+
+/*#show tr td div{*/
+    /*display:block;*/
+    /*overflow:hidden;*/
+    /*width:120px;*/
+    /*height:120px;*/
+    /*!*border:1px solid red;*!*/
+/*}*/
+
+
+
+/*移动的div*/
+.container{
+    display:block;
+    margin:0 auto;
+    width:524px;
+    height:524px;
+    overflow: hidden;
+    /*border:1px solid red;*/
+    position:relative;
+    /*top:-523px;*/
+    margin-top:-524px;
+    z-index:100;
+}
+
+/*具体的方块*/
+.craft{
+    width:120px;
+    height:120px;
+    /*border:0px solid transparent;*/
+    /*box-sizing: border-box;*/
+    /*background: red;*/
+    /*opacity: 0.5;*/
+    /*float:left;*/
+    /*margin:5px;*/
+    position:absolute;
+    display:block;
+    border-radius: 5px;
+    font-size:50px;
+    line-height:120px;
+    text-align:center;
+    font-weight:bold;
+    overflow:hidden;
+    color: #f9f6f2;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+
+    /*font-family: 微软雅黑;*/
+
+}
+
+/*方块123*/
+.div11{top:5px;left:5px;}
+.div12{top:5px;left:135px;}
+.div13{top:5px;left:265px;}
+.div14{top:5px;left:395px;}
+
+.div21{top:135px;left:5px;}
+.div22{top:135px;left:135px;}
+.div23{top:135px;left:265px;}
+.div24{top:135px;left:395px;}
+
+.div31{top:265px;left:5px;}
+.div32{top:265px;left:135px;}
+.div33{top:265px;left:265px;}
+.div34{top:265px;left:395px;}
+
+.div41{top:395px;left:5px;}
+.div42{top:395px;left:135px;}
+.div43{top:395px;left:265px;}
+.div44{top:395px;left:395px;}
+
+/*数字样式*/
+.num2{background: #eee4da;color: #776e65;}
+.num4{background: #ece0c8;color: #776e65;}
+.num8{background: #f2b179;}
+.num16{background: #f59563;}
+.num32{background: #e47556;}
+.num64{background: #e65933;}
+.num128{background: #dac066;}
+.num256{background: #dcbe54;}
+.num512{background: #dcba41;}
+.num1024{background: #dcb832;font-size:40px;}
+.num2048{background: #dcb621;font-size:40px;}
+.num4096{background: #dbb620;font-size:40px;}
+
+
+/*头部样式*/
+.header{
+    width:524px;
+    margin:0 auto;
+    height:160px;
+    position:relative;
+    display:block;
+}
+/*头部2048标题*/
+.header h1{
+    color: #776e65;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size:80px;
+    margin:0px;
+    padding:0px;
+}
+
+/*头部说明标签*/
+.header>p{
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+}
+
+/*得分情况*/
+#showScore,#showBestScore,#replay,#scoreGain,#skill{
+    /*float:right;*/
+    display:block;
+    position:absolute;
+    top:20px;
+    height:60px;
+    width:130px;
+    background: #bbada0;
+    border-radius: 10px;
+    line-height:30px;
+    text-align: center;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size:17px;
+    overflow:hidden;
+    letter-spacing: 3px;
+    font-weight:500;
+    color:white;
+}
+/*显示得分*/
+#showScore{
+    left:250px;
+}
+#showScore span{
+    /*display:block;*/
+}
+/*动态显示得分*/
+#scoreGain{
+    left:250px;
+    background-color:transparent;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    opacity: 0;
+    top:40px;
+    display:block;
+
+}
+/*显示最高分*/
+#showBestScore{
+    left:394px;
+}
+/*重新开始*/
+#replay{
+    top:90px;
+    left:394px;
+    width:130px;
+    line-height:60px;
+    font-size:20px;
+}
+
+/*技能*/
+#skill{
+    top:90px;
+    left:250px;
+    width:130px;
+    line-height:60px;
+    font-size:20px;
+    display: none;
+}
+/*技能栏闪耀*/
+.skillShine{
+    /*color: #fff981;*/
+    /*background: rgba(255, 22, 162, 0.7);*/
+    box-shadow:0px 0px 6px 6px #c332ff;
+    border:2px solid #c332ff;
+}
+
+/*按键闪耀*/
+.craftShine{
+    box-shadow:0px 0px 6px 6px #ff0816;
+}
+
+.abilityShine{
+    box-shadow:0px 0px 6px 6px #ff0816;
+    /*position:relative;*/
+    /*overflow: hidden;*/
+    /*border:1px solid #baad9c;*/
+    /*background-color: rgba(255, 246, 24, 0.66);*/
+    /*display:block;*/
+    /*margin:0 auto;*/
+
+    width:524px;
+    height:524px;
+    /*overflow: hidden;*/
+    /*z-index: -200;*/
+    /*margin-top:-525px;*/
+}
